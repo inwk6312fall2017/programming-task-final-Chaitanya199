@@ -1,24 +1,21 @@
-file1 = open ("Book1.txt")
-file2 = open ("Book2.txt")
-file3 = open ("Book3.txt")
+def longest_word(Book1):
+	with open("Book1.txt", "r")as file1:
+		words= file1.read().split()
+	max_len = len(max(words,key=len))
+	return[word for word in words if len (word) == max_len]
+print(longest_word('Book1.txt'))
 
-import string
+def longest_word(Book2):
+	with open ("Book2.txt", "r") as file2:
+		words =file2.read().split()
+	max_len = len(max(words,key=len))
+	return[word for word in words if len (word) == max_len]
+print (longest_word('Book2.txt')) 
 
-"""for line1 in file1:
-	line1 = line1.strip()
-	for word1 in line1:
-		word1 = line1.split()
-	print (word1)
-
-for line2 in file2:
-	line2 = line2.strip()
-	for word2 in line2:
-		word2 = line2.split()
-	print (word2)"""
-
-for line in file3:
-	word = line.strip()
-	word = line.split()
-	print (word)
-
+def longest_word(Book3):
+	with open ("Book3.txt", "r") as file3:
+		words =file3.read().split()
+	max_len =len(max(words,key=len))
+	return[word for word in words if len (word) == max_len]
+print (longest_word('Book2.txt')) 
 
