@@ -17,8 +17,8 @@ for line2 in file2:
 	print (word2)"""
 
 for line in file3:
-	line = line.strip()
-	for word3 in file3:
-		word3 = line.split()
-	print (word3)
+	word = line.strip()
+	word = line.split()
+	print (word)
+
 

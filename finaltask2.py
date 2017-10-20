@@ -24,11 +24,12 @@ for forecast in location.forecast():
 		a.append(b)
 
 print (a)
+
 max=0
 
 for lists in a:
 	if int(lists[2])> max:
-		max = int(list[2])
+		max = int(lists[2])
 		s = lists[1]
 
 print (s)
